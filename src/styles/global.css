@@ -1,0 +1,19 @@
+
+.time-line-container >div:last-child .education__time >.education__line {
+    display: none;
+}
+
+
+.copy-code {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3484d3;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.copy-code:hover {
+    background-color: #78bde1;
+}

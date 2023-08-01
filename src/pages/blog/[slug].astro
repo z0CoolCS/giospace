@@ -1,0 +1,76 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import { BlogSchema } from '../../content/config';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import TableContent from "../../components/TableContent.astro";
+
+export async function getStaticPaths() {
+    const postEntries = await getCollection('blog');
+    return postEntries.map(entry => ( { 
+        params: { slug: entry.slug }, props: { entry }
+    } ));
+}
+
+interface Props {
+    entry: CollectionEntry<"blog">;
+}
+
+const { entry } = Astro.props;
+const post : BlogSchema = entry.data;
+const { Content, headings } = await entry.render();
+---
+
+
+<BlogLayout 
+    title={post.title} 
+    description={post.description} 
+    pubDate={post.pubDate} 
+    heroImage={post.heroImage} 
+    updatedDate={post.updatedDate} 
+    badge={post.badge}>
+
+    <TableContent pageHeadings={headings} />
+    <Content />
+</BlogLayout>
+
+
+<script>
+    let copyButtonLabel = "Copy Code";
+    let codeBlocks = Array.from(document.querySelectorAll("pre"));
+    console.log("Hello World!")
+    console.log(codeBlocks[0])
+  
+    for (let codeBlock of codeBlocks) {
+      let wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
+  
+      let copyButton = document.createElement("button");
+      copyButton.className = "copy-code";
+      copyButton.innerHTML = copyButtonLabel;
+  
+      codeBlock.setAttribute("tabindex", "0");
+      codeBlock.appendChild(copyButton);
+      // wrap codebock with relative parent element
+      codeBlock.parentNode!.insertBefore(wrapper, codeBlock);
+      console.log(codeBlock)
+      wrapper.appendChild(codeBlock);
+  
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton);
+      });
+    }
+  
+    async function copyCode(block, button) {
+      let code = block.querySelector("code");
+      let text = code.innerText;
+  
+      await navigator.clipboard.writeText(text);
+  
+      // visual feedback that task is completed
+      button.innerText = "Code Copied";
+  
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+  </script>
