@@ -5,8 +5,10 @@ import { getCollection } from "astro:content";
 
 
 export async function getStaticPaths({ paginate }) {
-  const projects = await getCollection("project");
-  projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const projects2 = await getCollection("project");
+  projects2.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  const projects = projects2.filter((project) => ! project.data.draft);
+
   return paginate(projects, { pageSize: 10 });
 }
 
@@ -22,7 +24,7 @@ const { page } = Astro.props;
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no blog posts to show at the moment. Check back later!</p>
+        <p>There are no projects to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>

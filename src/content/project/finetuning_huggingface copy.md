@@ -12,6 +12,8 @@ heroImage: "/project/finetune_huggingface.png"
 url: "finetuning_huggingface"
 type_content: "project"
 badge: "New"
+draft: True
+
 ---
 
 Today, we are going to deploy a HuggingFace model inside the Azure cloud infrastructure using the Azure Machine Learning cloud service. 

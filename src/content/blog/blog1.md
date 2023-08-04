@@ -1,6 +1,6 @@
 ---
 
-title: 'My Prueba Blog Post'
+title: 'My Prueba Blog Post draft false'
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
 image:
@@ -12,6 +12,7 @@ heroImage: "/post_img.webp"
 url: "blog1"
 type_content: "blog"
 badge: "New"
+draft: False
 ---
 
 
