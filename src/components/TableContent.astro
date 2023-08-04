@@ -1,6 +1,4 @@
 ---
-import TableContentsHeading from "../components/TableContentsHeading.astro";
-
 export type Props = {
     pageHeadings : Array<{depth:number,text: string; slug: string }>
 }
@@ -17,11 +15,11 @@ const { pageHeadings } = Astro.props;
     }
 </style>
 
-<aside id="#toc" class="fixed right-5 top-5 bg-base-300 rounded-md text-sm">
-    <h2 class="text-sml mx-5 mt-5">Table of Content</h2>
+<aside id="#toc" class="fixed right-5 top-5 bg-base-300 rounded-md text-xs w-40">
+    <h2 class="text-sm mx-5 mt-5">Table of Content</h2>
     {
     pageHeadings && 
-    (<ul class="list-none mt-0 pt-0">{pageHeadings.map( (h) => { 
+    (<ul class="list-none mt-0 pt-0 px-3 break-normal">{pageHeadings.map( (h) => { 
         if (h.depth == 2) {
             return <li> <a href={`#${h.slug}`} class="no-underline">
             * {h.text}</a></li> 
@@ -35,11 +33,11 @@ const { pageHeadings } = Astro.props;
             &emsp;&emsp;
             *** {h.text}</a></li> 
         }
-        else if (h.depth == 5) {
-            return <li> <a href={`#${h.slug}`} class="no-underline">
-            &emsp;&emsp;&emsp;
-            **** {h.text}</a></li> 
-        }
+        // else if (h.depth == 5) {
+        //     return <li> <a href={`#${h.slug}`} class="no-underline">
+        //     &emsp;&emsp;&emsp;
+        //     **** {h.text}</a></li> 
+        // }
         
         })} </ul>) 
     }

@@ -9,11 +9,12 @@ image:
 tags: ["astro", "blogging", "learning in public", "ML"]
 pubDate: 2022-09-01
 heroImage: "/post_img.webp"
-url: "blog1"
+url: "blog1-copy"
 type_content: "blog"
 badge: "New"
 ---
 
+Today, we are going to deploy a HuggingFace model inside the Azure cloud infrastructure using the Azure Machine Learning cloud service. 
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
@@ -24,6 +25,7 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
 
 3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+
 
 ## What's next
 

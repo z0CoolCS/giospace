@@ -1,21 +1,27 @@
 ---
 
-title: 'My Prueba Blog Post'
+title: 'Finetune a HuggingFace model 🧠'
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public", "ML"]
+tags: ["azure", "cloud computing", "hugginface", "ML"]
 pubDate: 2022-09-01
-heroImage: "/post_img.webp"
-url: "blog1"
-type_content: "blog"
+heroImage: "/project/finetune_huggingface.png"
+url: "finetuning_huggingface"
+type_content: "project"
 badge: "New"
 ---
 
+Today, we are going to deploy a HuggingFace model inside the Azure cloud infrastructure using the Azure Machine Learning cloud service. 
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+To start doing that, we need to first install some packages dependences from [here](). Please execute the following command with your virtual environment activated.
+
+```sh
+wget 
+pip install -r requirements.txt
+```
 
 ## What I've accomplished
 
