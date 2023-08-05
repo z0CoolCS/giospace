@@ -12,7 +12,7 @@ heroImage: "/project/finetune_huggingface.png"
 url: "finetuning_huggingface"
 type_content: "project"
 badge: "New"
-draft: True
+draft: False
 
 ---
 
