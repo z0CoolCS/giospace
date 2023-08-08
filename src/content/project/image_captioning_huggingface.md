@@ -8,7 +8,7 @@ image:
     alt: 'The full Astro logo.'
 tags: ["azure", "cloud computing", "hugginface", "ML"]
 pubDate: 2022-09-01
-heroImage: "/project/image_captioning_huggingface.png"
+heroImage: "/project/imagecaptioninig_huggingfacepytorch.png"
 url: "finetuning_huggingface"
 type_content: "project"
 badge: "New"

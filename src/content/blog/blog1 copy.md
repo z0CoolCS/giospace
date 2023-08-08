@@ -12,7 +12,7 @@ heroImage: "/post_img.webp"
 url: "blog1-copy"
 type_content: "blog"
 badge: "New"
-draft: false
+draft: True
 ---
 
 Today, we are going to deploy a HuggingFace model inside the Azure cloud infrastructure using the Azure Machine Learning cloud service. 
