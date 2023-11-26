@@ -80,11 +80,11 @@ function (e, t, r) {
     async start() {
         // this.el;
         for (let e = 0; e < this.text.length; e++) {
-        const t = this.text[e];
-        let r = t.split("");
-        this.writeWhole && (r = [t]),
-            await this.writeText(r),
-            e == this.text.length - 1 && (e = -1);
+            const t = this.text[e];
+            let r = t.split("");
+            this.writeWhole && (r = [t]),
+                await this.writeText(r),
+                e == this.text.length - 1 && (e = -1);
         }
     }
     writeText(e) {
@@ -126,3 +126,11 @@ const exampleTyping = new AutoTyping('#text', exampleText, {
     waitBetweenWords: 500,
 });
 exampleTyping.start()
+    
+
+function toggleTOC() {
+    var tocList = document.getElementById('toc-list');
+    if (tocList) {
+        tocList.classList.toggle('hidden');
+    }
+}
