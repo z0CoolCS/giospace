@@ -118,7 +118,7 @@ function (e, t, r) {
 ]).default;
 
 
-const exampleText = ['AI Researcher', 'ML Engineering', 'DS Teacher'];
+const exampleText = ['AI Researcher', 'ML Engineer', 'DS Teacher'];
 const exampleTyping = new AutoTyping('#text', exampleText, {
     typeSpeed: 100,
     deleteSpeed: 100,

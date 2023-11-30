@@ -12,7 +12,7 @@ heroImage: "/post_img.webp"
 url: "blog1"
 type_content: "blog"
 badge: "New"
-draft: False
+draft: True
 ---
 
 

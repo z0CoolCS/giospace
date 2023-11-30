@@ -49,8 +49,8 @@ const { pageHeadings } = Astro.props;
     const tableContent = document.getElementById("toggle-toc");
     var tocList = document.getElementById('toc-list');
     
-    tableContent.addEventListener("click", () => {
+    tableContent?.addEventListener("click", () => {
         //console.log("Hello, on client");
-        tocList.classList.toggle('hidden'); 
+        tocList?.classList.toggle('hidden'); 
     });
 </script>
