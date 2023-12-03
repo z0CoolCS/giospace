@@ -3,14 +3,10 @@
 title: 'Deploy a HuggingFace model 🧠 in Azure Machine Learning ☁️'
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
 tags: ["azure", "cloud computing", "hugginface", "ML"]
 pubDate: 2022-09-01
 heroImage: "/project/azure_hugginface_banner.png"
 url: "deploy_huggingface_azure"
-type_content: "project"
 badge: "New"
 draft: True
 

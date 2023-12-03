@@ -1,17 +1,14 @@
 ---
 
 title: 'Train an Image captioning model 🧠 using Pytorch'
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+description: 'Training a Pytorch model to generates captions of images.'
+author: 'Giordano Alvitez'
 tags: ["pytorch", "image captioning", "coco dataset", "deep learning", "computer vision", "nlp"]
 pubDate: 2023-08-07
 heroImage: "/project/imagecaptioning_pytorch.png"
 url: "imagecaption_pytorch"
 type_content: "project"
-badge: "New"
+# badge: "New"
 draft: False
 
 ---

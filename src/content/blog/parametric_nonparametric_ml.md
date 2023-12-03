@@ -1,13 +1,13 @@
 ---
 
 title: 'Parametric and Non-Parametric Machine Learning Models'
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-tags: ["pytorch", "image captioning", "coco dataset", "deep learning", "computer vision", "nlp"]
-pubDate: 2023-08-07
+description: 'An explanation to understand when a machine learning model is parametric or non-parametric.'
+author: 'Giordano Alvitez'
+tags: ["machine learning", "deep learning"]
+pubDate: 2023-11-30
 heroImage: "/project/parametricvsnonparametric.png"
-url: "imagecaption_pytorch"
-type_content: "project"
+url: "parametric_nonparametric_ml"
+type_content: "blog"
 badge: "New"
 draft: False
 ---
