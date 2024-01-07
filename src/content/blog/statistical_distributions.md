@@ -129,7 +129,7 @@ plt.xlabel('Number of Events')
 plt.ylabel('Frequency')
 plt.show()
 ```
-![](/public/project/statistical_distributions/poisson_distribution.png)
+![](/project/statistical_distributions/poisson_distribution.png)
 
 ### Geometric Distribution
 The Geometric distribution is a discrete probability distribution that models the number of trials needed to achieve the first success in a sequence of independent Bernoulli trials, each with the same probability of success. It is a simple model that answers the question, "How many trials will it take to achieve the first success?"
@@ -167,7 +167,7 @@ plt.ylabel('Frequency')
 plt.show()
 
 ```
-![](/public/project/statistical_distributions/geometric_distribution.png)
+![](/project/statistical_distributions/geometric_distribution.png)
 
 > The distribution is skewed to the right, which is typical for Geometric distributions. This skewness indicates that while the first success might occur in the initial trials, there's also a non-negligible probability of requiring a larger number of trials.
 > 
@@ -219,7 +219,7 @@ plt.ylabel('Density')
 plt.show()
 
 ```
-![](/public/project/statistical_distributions/normal_distribution.png)
+![](/project/statistical_distributions/normal_distribution.png)
 
 In this plot:
 - The distribution forms the classic bell-shaped curve that is symmetric around the mean.
