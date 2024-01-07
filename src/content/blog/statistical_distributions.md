@@ -20,13 +20,14 @@ Statistical distributions are fundamental in understanding and representing how 
 The Bernoulli distribution is a simple discrete probability distribution that has only two possible outcomes, commonly labeled as "success" and "failure." The number of trials is just one (a special case of the binomial distribution).
 
 **Key aspects**
-The probability mass function (PMF) of a Bernoulli distribution is given by:
-$$\begin{cases}
-   p & \text{if } k=1, \\
-   1-p & \text{if } k=0 
-\end{cases} $$
+The probability mass function (PMF) of a Bernoulli distribution is given by:  
 
-where \( p \) is the probability of success (k=1), and \( 1-$p$ \) is the probability of failure (k=0).
+<!-- $$ \begin{cases} p & \text{if } k=1, \\ 1-p & \text{if } k=0  \end{cases} $$ -->
+
+<!-- ***<p style="text-align: center;">Text with basic formatting applied</p>*** -->
+
+***<p style="text-align: center;">$$ \begin{cases} p & \text{if } k=1, \\ 1-p & \text{if } k=0  \end{cases} $$</p>***
+where $p$ is the probability of success (k=1), and \( 1-$p$ \) is the probability of failure ($k$=0).
 
 **Examples**:
 - Flipping a coin (where heads could be defined as success and tails as failure).
