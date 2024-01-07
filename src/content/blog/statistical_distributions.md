@@ -54,7 +54,7 @@ plt.ylabel('Frequency')
 plt.show()
 ```
 
-![](/public/project/statistical_distributions/bernoulli_distribution.png)
+![](/project/statistical_distributions/bernoulli_distribution.png)
 
 ### Binomial Distribution
 The Binomial distribution is a discrete probability distribution that describes the number of successes in a fixed number of **independent trials** of a binary experiment. It is an extension of the Bernoulli distribution across multiple trials.  
@@ -93,7 +93,7 @@ plt.show()
 
 ```
 
-![](/public/project/statistical_distributions/binomial_distribution.png)
+![](/project/statistical_distributions/binomial_distribution.png)
 
 ### Poisson Distribution
 The Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space, assuming these events occur with a known constant mean rate and independently of the time since the last event.
